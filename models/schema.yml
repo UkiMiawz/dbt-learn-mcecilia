@@ -45,4 +45,4 @@ models:
       - name: status
         tests:
           - accepted_values:
-              values: ['success']
+              values: ['success', 'fail']
