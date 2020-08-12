@@ -33,3 +33,16 @@ models:
         tests:
           - accepted_values:
               values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
+  
+  - name: stg_stripe
+    description: Payments information from stripe raw payments
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: amount
+      - name: created_date
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['success']
