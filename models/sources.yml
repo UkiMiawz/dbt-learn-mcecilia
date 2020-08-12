@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+    - name: jaffle_shop
+      description: Raw data for jaffle shop
+      database: raw
+      tables:
+        - name: customers
+        - name: orders
+    - name: stripe
+      description: Stripe raw payments
+      database: raw
+      tables:
+        - name: payment
